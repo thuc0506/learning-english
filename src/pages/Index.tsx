@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Users, Award, Globe, Play, Star, CheckCircle, Heart } from "lucide-react";
+import { BookOpen, Users, Award, Globe, Play, Star, CheckCircle, GraduationCap } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -45,7 +46,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 font-nunito">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-green-50 font-nunito">
       <Navigation />
       
       {/* Hero Section */}
@@ -53,11 +54,11 @@ const Index = () => {
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 font-nunito">
             Học Tiếng Anh
-            <span className="text-duolingo-green"> Hiệu Quả</span>
+            <span className="text-duolingo-green"> Chuyên Nghiệp</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed font-nunito font-medium">
-            Nền tảng học tiếng Anh trực tuyến hiện đại với phương pháp giảng dạy 
-            tương tác và công nghệ AI tiên tiến
+            Nền tảng học tiếng Anh trực tuyến hàng đầu với phương pháp giảng dạy 
+            hiện đại và đội ngũ giáo viên chuyên nghiệp
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -155,10 +156,10 @@ const Index = () => {
       <section className="bg-gradient-to-r from-duolingo-blue to-duolingo-blue-light text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-black mb-4 font-nunito">
-            Sẵn sàng bắt đầu hành trình học tiếng Anh?
+            Sẵn sàng nâng cao trình độ tiếng Anh?
           </h2>
           <p className="text-xl mb-8 text-blue-100 font-nunito font-medium">
-            Tham gia cùng hàng nghìn học viên đã thành công
+            Tham gia cùng hàng nghìn học viên đã thành công trong việc học tiếng Anh
           </p>
           <Button 
             size="lg" 
@@ -174,17 +175,17 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
-                  <Heart className="h-5 w-5 text-white fill-white" />
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-duolingo-blue to-duolingo-green rounded-xl flex items-center justify-center shadow-lg">
+                  <GraduationCap className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex flex-col">
                   <h3 className="text-xl font-bold font-nunito">English Learning</h3>
-                  <span className="text-xs text-pink-300 font-nunito font-semibold -mt-1">💝 Học với yêu thương</span>
+                  <span className="text-xs text-blue-300 font-nunito font-semibold -mt-1">📚 Học tiếng Anh chuyên nghiệp</span>
                 </div>
               </div>
               <p className="text-gray-400 font-nunito">
-                Nền tảng học tiếng Anh trực tuyến hàng đầu Việt Nam
+                Nền tảng học tiếng Anh trực tuyến chuyên nghiệp hàng đầu Việt Nam
               </p>
             </div>
             <div>

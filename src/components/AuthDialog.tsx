@@ -50,7 +50,7 @@ const AuthDialog = ({ open, onOpenChange, mode, onModeChange }: AuthDialogProps)
           <DialogDescription className="text-center font-nunito text-gray-600 font-medium text-lg">
             {mode === 'login' 
               ? 'Chào mừng bạn trở lại!' 
-              : 'Tạo tài khoản để bắt đầu học tiếng Anh'
+              : 'Tạo tài khoản để bắt đầu hành trình học tiếng Anh'
             }
           </DialogDescription>
         </DialogHeader>
@@ -173,7 +173,7 @@ const AuthDialog = ({ open, onOpenChange, mode, onModeChange }: AuthDialogProps)
               <>
                 Chưa có tài khoản?{' '}
                 <button
-                  className="text-duolingo-green hover:text-duolingo-green-dark font-bold hover:underline"
+                  className="text-duolingo-blue hover:text-duolingo-blue-dark font-bold hover:underline"
                   onClick={() => onModeChange('register')}
                 >
                   Đăng ký ngay
@@ -183,7 +183,7 @@ const AuthDialog = ({ open, onOpenChange, mode, onModeChange }: AuthDialogProps)
               <>
                 Đã có tài khoản?{' '}
                 <button
-                  className="text-duolingo-green hover:text-duolingo-green-dark font-bold hover:underline"
+                  className="text-duolingo-blue hover:text-duolingo-blue-dark font-bold hover:underline"
                   onClick={() => onModeChange('login')}
                 >
                   Đăng nhập
