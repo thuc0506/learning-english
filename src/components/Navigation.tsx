@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, BookOpen } from "lucide-react";
+import { Menu, X, Heart } from "lucide-react";
 import AuthDialog from "./AuthDialog";
 
 const Navigation = () => {
@@ -21,10 +21,13 @@ const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-duolingo-green rounded-full flex items-center justify-center">
-                <BookOpen className="h-6 w-6 text-white" />
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
+                <Heart className="h-6 w-6 text-white fill-white animate-pulse" />
               </div>
-              <span className="text-2xl font-bold text-gray-800 font-nunito">English Learning</span>
+              <div className="flex flex-col">
+                <span className="text-2xl font-black text-gray-800 font-nunito">English Learning</span>
+                <span className="text-xs text-pink-500 font-nunito font-semibold -mt-1">💝 Học với yêu thương</span>
+              </div>
             </div>
 
             {/* Desktop Menu */}

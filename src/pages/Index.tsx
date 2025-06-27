@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Users, Award, Globe, Play, Star, CheckCircle } from "lucide-react";
+import { BookOpen, Users, Award, Globe, Play, Star, CheckCircle, Heart } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -176,10 +175,13 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-duolingo-green rounded-full flex items-center justify-center">
-                  <BookOpen className="h-5 w-5 text-white" />
+                <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                  <Heart className="h-5 w-5 text-white fill-white" />
                 </div>
-                <h3 className="text-xl font-bold font-nunito">English Learning</h3>
+                <div className="flex flex-col">
+                  <h3 className="text-xl font-bold font-nunito">English Learning</h3>
+                  <span className="text-xs text-pink-300 font-nunito font-semibold -mt-1">💝 Học với yêu thương</span>
+                </div>
               </div>
               <p className="text-gray-400 font-nunito">
                 Nền tảng học tiếng Anh trực tuyến hàng đầu Việt Nam
