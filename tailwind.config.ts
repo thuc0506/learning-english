@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,25 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'nunito': ['Nunito', 'sans-serif'],
+				'sans': ['Nunito', 'sans-serif'],
+			},
 			colors: {
+				// Duolingo-inspired colors
+				'duolingo': {
+					green: '#58CC02',
+					'green-dark': '#4BAA00',
+					'green-light': '#89E219',
+					blue: '#1CB0F6',
+					'blue-dark': '#1899D6',
+					'blue-light': '#84D5FF',
+					red: '#FF4B4B',
+					yellow: '#FFC800',
+					orange: '#FF9600',
+					purple: '#CE82FF',
+					pink: '#FF69B4',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
